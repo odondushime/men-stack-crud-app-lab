@@ -117,4 +117,4 @@ project/
 └── package.json           # Project metadata and dependencies
 ```
 
-This README preview provides a concise overview of the Planet Tracker App. Refer to the project's codebase for a more comprehensive understanding of the application's functionalities and implementation.
+This README preview simply provides a concise overview of the Planet Tracker App. Refer to the project's codebase for a more comprehensive understanding of the application's functionalities and implementation.- coder. 
