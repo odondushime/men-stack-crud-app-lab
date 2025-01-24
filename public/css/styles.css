@@ -1,0 +1,72 @@
+/* File: public/css/styles.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background: #000; /* Fallback background color */
+  color: #fff; /* Default text color */
+  font-family: "Orbitron", sans-serif;
+}
+
+.welcome-container {
+  background: url("/images/mars-horizon.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-message {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  padding: 20px 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  margin: 5px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}

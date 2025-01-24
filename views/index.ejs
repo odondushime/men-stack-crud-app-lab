@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planet Tracker</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <a href="/auth/login" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> Login</a>
+  <a href="/auth/register" class="btn btn-secondary"><i class="fas fa-user-plus"></i> Register</a>
+</head>
+<body>
+  <div class="welcome-container">
+    <div class="welcome-message">
+      <h1>Welcome to Planet Tracker</h1>
+      <% if (user) { %>
+        <p>Hello, <%= user.email %>!</p>
+        <a href="/planets" class="btn btn-primary">View My Planets</a>
+        <a href="/auth/logout" class="btn btn-danger">Logout</a>
+      <% } else { %>
+        <a href="/auth/login" class="btn btn-primary">Login</a>
+        <a href="/auth/register" class="btn btn-secondary">Register</a>
+      <% } %>
+    </div>
+  </div>
+  <footer style="text-align: center; margin-top: 20px; color: #ddd;">
+    <p>Planet Tracker © 2025 | Designed for Space Enthusiasts</p>
+  </footer>
+</body>
+</html>
+
+

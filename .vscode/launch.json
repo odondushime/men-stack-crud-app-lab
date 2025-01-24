@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/odondushime/code/ga/labs/MEN-STACK-CRUUD-APP-LAB",
+      "program": "/Users/odondushime/code/ga/labs/MEN-STACK-CRUUD-APP-LAB/build/Debug/outDebug"
+    }
+  ]
+}

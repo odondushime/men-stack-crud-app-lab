@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Planets</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Planets</h1>
+    <ul>
+      <% planets.forEach(planet => { %>
+        <li>
+          <h3><%= planet.name %></h3>
+          <p>Size: <%= planet.size %> km</p>
+          <p>Description: <%= planet.description %></p>
+          <a href="/planets/<%= planet._id %>/edit" class="btn btn-secondary">Edit</a>
+          <form action="/planets/<%= planet._id %>/delete" method="POST" style="display:inline;">
+            <button type="submit" class="btn btn-danger">Delete</button>
+          </form>
+        </li>
+      <% }) %>
+    </ul>
+    <a href="/planets/new" class="btn btn-primary">Add New Planet</a>
+  </div>
+</body>
+</html>

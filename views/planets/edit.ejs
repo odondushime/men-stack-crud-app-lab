@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Planet</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Edit Planet</h1>
+      <form action="/planets/<%= planet._id %>" method="POST">
+        <label for="name">Planet Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          value="<%= planet.name %>"
+          required
+        />
+
+        <label for="size">Size (in km):</label>
+        <input
+          type="number"
+          name="size"
+          id="size"
+          value="<%= planet.size %>"
+          required
+        />
+
+        <label for="description">Description:</label>
+        <textarea name="description" id="description" required>
+<%= planet.description %></textarea
+        >
+
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+      </form>
+    </div>
+  </body>
+</html>
